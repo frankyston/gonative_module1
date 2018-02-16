@@ -1,4 +1,4 @@
-import React, { StyleSheet } from 'react-native'
+import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   container: {
@@ -39,5 +39,5 @@ export default StyleSheet.create({
   },
   text_post: {
     color: '#666666',
-  }
+  },
 });

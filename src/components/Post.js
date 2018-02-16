@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Text, View } from 'react-native';
 
+import PropTypes from 'prop-types';
+
 import styles from 'styles/Styles';
 
 const Post = props => (
@@ -20,6 +22,12 @@ Post.defaultProps = {
   title: 'Title post',
   author: 'Author post',
   description: 'Description post'
-}
+};
+
+Post.propTypes = {
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
 
 export default Post;
